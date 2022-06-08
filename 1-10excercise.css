@@ -22,6 +22,8 @@ main {
 
 .box {
   width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #EEEEEE;
   position: relative;
 }
@@ -33,9 +35,8 @@ main {
 .box-image-common {
   background-size: cover;
   background-position: bottom;
-  width: 280px;
   height: 150px;
-  margin: 10px 10px 0;
+  margin: 0 10px 0;
 }
 
 .box-image1 {
@@ -51,24 +52,41 @@ main {
 }
 
 .box-content {
-  margin: 0 10px 10px;
+  margin: 0 10px 0;
 }
 
 .box-content h3{
-  width: 280px;
   margin: 15px auto 5px;
 }
 
 .box-content p {
-  width: 280px;
   margin: 0 auto;
 }
 
 .box-text {
   position: absolute;
+  top:0;
   width: 43px;
   font-size: 16px;
   text-align: center;
   color: #fff;
   background-color: #FF9A4B;
+}
+
+@media screen and (max-width:768px) {
+  main {
+    display: block;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .box:nth-child(-n+2) {
+    margin: 0 auto 20px;
+  }
+
+  .box:last-child {
+    margin: 0 auto;
+  }
 }
