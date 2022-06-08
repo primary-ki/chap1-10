@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  background-color: #FF9A4B;
+}
+
+footer {
+  height: 50px;
+  background-color: #AAAAAA;
+}
+
+main {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  background-color: #EEEEEE;
+  position: relative;
+}
+
+.box:nth-child(-n+2) {
+  margin-right: 30px;
+}
+
+.box-image-common {
+  background-size: cover;
+  background-position: bottom;
+  width: 280px;
+  height: 150px;
+  margin: 10px 10px 0;
+}
+
+.box-image1 {
+  background-image: url(1-10excercise-img/flow01.png);
+}
+
+.box-image2 {
+  background-image: url(1-10excercise-img/flow02.png);
+}
+
+.box-image3 {
+  background-image: url(1-10excercise-img/flow03.png);
+}
+
+.box-content {
+  margin: 0 10px 10px;
+}
+
+.box-content h3{
+  width: 280px;
+  margin: 15px auto 5px;
+}
+
+.box-content p {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.box-text {
+  position: absolute;
+  width: 43px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF9A4B;
+}
